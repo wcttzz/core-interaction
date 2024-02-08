@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    margin: 0; 
+    font-size: 50pt;
+    color: rgb(213, 202, 255);
+}
+ul {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    list-style-type:lower-greek; 
+    padding: 0;
+}
+ul li {
+    margin: 0 10px; 
+    color: rgb(213, 202, 255);
+    text-decoration: dotted;
+}
+
+/* Link in its normal state */
+ul li a {
+    margin: 0 10px; 
+    color: rgb(213, 202, 255);
+    text-decoration:dotted;
+}
+ul li a:visited {
+    color: rgb(213, 202, 255);
+}
