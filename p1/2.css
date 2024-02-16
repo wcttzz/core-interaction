@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 100vh;
+    background: #071b0d;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Lavishly Yours';
+    color: aliceblue;
+    font-size: 100px;
+    margin-top: 13.5%; 
+    text-align: center;
+}
+
+.text {
+    width: 80%;
+    position: fixed;
+    left: 170px;
+    top: 10%;
+    font-size: 25px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+}
+
+

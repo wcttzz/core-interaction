@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 100vh;
+    background: #071b0d;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Lavishly Yours';
+    color: aliceblue;
+    font-size: 100px;
+    margin-top: 13.5%; 
+    text-align: center;
+}
+
+p.sub {
+    color: aliceblue;
+    font-family: "larken", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    left: -100px;
+    top: 15px;
+}
+
+
+@-webkit-keyframes pulse {
+    0% { box-shadow:0 0 40px rgb(190, 209, 219), inset 0 0 40px rgb(190, 209, 219) }
+    50% { box-shadow:0 0 80px rgb(190, 209, 219), inset 0 0 80px rgb(190, 209, 219) }
+    100% { box-shadow:0 0 40px rgb(190, 209, 219), inset 0 0 40px rgb(190, 209, 219) }
+    }
+     
+.circle1 {
+    background-color: rgb(190, 209, 219);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; 
+    box-shadow: 0 0 8px rgb(190, 209, 219), inset 0 0 8px rgb(190, 209, 219);
+    position: fixed;
+    left: 18%;
+    bottom: 25%;
+    -webkit-animation: pulse 3s linear 1s infinite;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    }
+    
+.circle1 p {
+    text-align: center;
+    font-family: 'Lavishly Yours';
+    font-weight: 100;
+    font-size: 30px;
+    color: #071b0d;
+    margin: 0; /
+    padding: 0;
+}
+
+.circle2 {
+    background-color: rgb(190, 209, 219);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; 
+    box-shadow: 0 0 8px rgb(190, 209, 219), inset 0 0 8px rgb(190, 209, 219);
+    position: fixed;
+    left: 43%;
+    bottom: 25%;
+     -webkit-animation: pulse 3s linear 1s infinite;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+        }
+        
+.circle2 p {
+     text-align: center;
+    font-family: 'Lavishly Yours';
+    font-weight: 100;
+    font-size: 30px;
+    color: #071b0d;
+     margin: 0; /
+    padding: 0;
+    }
+    .circle3 {
+        background-color: rgb(190, 209, 219);
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; 
+        box-shadow: 0 0 8px rgb(190, 209, 219), inset 0 0 8px rgb(190, 209, 219);
+        position: fixed;
+        left: 68%;
+        bottom: 25%;
+         -webkit-animation: pulse 3s linear 1s infinite;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+            }
+            
+    .circle3 p {
+         text-align: center;
+        font-family: 'Lavishly Yours';
+        font-weight: 100;
+        font-size: 30px;
+        color: #071b0d;
+         margin: 0; /
+        padding: 0;
+        }
+
+.circle1, .circle2, .circle3 {
+    transition: all 10s ease;
+}
+
+.link:hover .circle1,
+.link:hover .circle2,
+.link:hover .circle3 {
+    transform: scale(3);
+}
+
+
+
