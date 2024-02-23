@@ -27,16 +27,16 @@ p.sub {
     font-style: italic;
     font-size: 22px;
     text-align: center;
-    position: relative;
-    left: -100px;
-    top: 15px;
+    position: fixed;
+    left: 19%;
+    top: 37%;
 }
 
 
 @-webkit-keyframes pulse {
-    0% { box-shadow:0 0 40px rgb(190, 209, 219), inset 0 0 40px rgb(190, 209, 219) }
-    50% { box-shadow:0 0 80px rgb(190, 209, 219), inset 0 0 80px rgb(190, 209, 219) }
-    100% { box-shadow:0 0 40px rgb(190, 209, 219), inset 0 0 40px rgb(190, 209, 219) }
+    0% { box-shadow:0 0 30px rgb(190, 209, 219), inset 0 0 30px rgb(190, 209, 219) }
+    50% { box-shadow:0 0 90px rgb(190, 209, 219), inset 0 0 90px rgb(190, 209, 219) }
+    100% { box-shadow:0 0 30px rgb(190, 209, 219), inset 0 0 30px rgb(190, 209, 219) }
     }
      
 .circle1 {
