@@ -11,27 +11,23 @@
     <title>Project 1</title>
 </head>
 <body>
+    <div class="container">
     <h1> The Garden of Forking Paths</h1>
-    <p class="sub">a lantern approached; a paper lantern shaped like a drum and colored like the moon...</p>
+    <h2> a lantern approached; a paper lantern shaped like a drum and colored like the moon...</h2> 
+    </div>
 
-    <a href="2.html" class="link">
-        <div class="circle1">
-            <p>read in the past</p>
-        </div>
-    </a>
-    
-    <a href="3.html" class="link">
-        <div class="circle2">
-            <p>read now</p>
-        </div>
-    </a>
-    
-    <a href="4.html" class="link">
-        <div class="circle3">
-            <p>read in the future</p>
-        </div>
-    </a>
-    
-
+    <div class="circlecontainer">
+        <a href="2.html"> 
+            <div class="circle circle1"> read in the past</div>
+        </a>
+        <a href="4.html">
+            <div class="circle circle1"> read now</div>
+        </a>
+        <a href="3.html">
+        <div class="circle circle1"> read in the future</div>
+        </a>
+    </div>
+    <canvas id="noise" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none;"></canvas>
+    <script src="1.js"></script>
 </body>
 </html>

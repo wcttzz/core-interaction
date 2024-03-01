@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: linear-gradient(to right, #071b0d 0%, #071b0d 32%, #1f3827 100%);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body::after {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent, rgba(0, 0, 0, 0.7) 70%);
+    pointer-events: none; 
+    z-index: 1;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    margin: 20px;
+    padding: 40px 100px 0px 100px;
+}
+
+p {
+color: aliceblue;
+font-family: "larken", sans-serif;
+font-weight: 100;
+font-size: 25px;
+}
+.circlecontainer{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    ;
+}
+
+.circle {
+    background-color: rgb(85, 89, 91);
+    width: 250px;
+    height: 250px;
+    border-radius: 150px; 
+    box-shadow: 0 0 8px rgb(243, 251, 255), inset 0 0 8px rgb(237, 249, 255);
+    -webkit-animation: pulse 3s linear 1s infinite; 
+    }
+  
+    
+.circle1 {
+    text-align: center;
+    position: relative;
+    font-family: 'Lavishly Yours';
+    font-weight: 100;
+    font-size: 35px;
+    color: #071b0d;
+    margin: 10px ;
+    padding-top: 90px;
+}
+a {
+    text-decoration: none;
+}
+        
+@-webkit-keyframes pulse {
+    0% { box-shadow:0 0 30px rgb(190, 209, 219), inset 0 0 30px rgb(190, 209, 219) }
+    50% { box-shadow:0 0 90px rgb(190, 209, 219), inset 0 0 90px rgb(190, 209, 219) }
+    100% { box-shadow:0 0 30px rgb(190, 209, 219), inset 0 0 30px rgb(190, 209, 219) }
+    }
+
+
