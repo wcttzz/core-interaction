@@ -1,37 +1,100 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-h1 {
-    margin: 0; 
-    font-size: 50pt;
-    color: rgb(213, 202, 255);
-}
-ul {
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    list-style-type:lower-greek; 
+* {
+    margin: 0;
     padding: 0;
 }
-ul li {
-    margin: 0 10px; 
-    color: rgb(213, 202, 255);
-    text-decoration: dotted;
+
+body {
+    background-color: black;
+    cursor: none;
 }
 
-/* Link in its normal state */
-ul li a {
-    margin: 0 10px; 
-    color: rgb(213, 202, 255);
-    text-decoration:dotted;
+.container {
+    display: flex;
+    width: 100%;
+    height: 856px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-ul li a:visited {
-    color: rgb(213, 202, 255);
+
+h1, h2 {
+    color: #ffffff;
+    font-family: "museomoderno", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 9rem;
+    line-height: 1.7em;
+}
+
+.square {
+    background-color: #ffffff;
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    filter: blur(40px); /* Apply a blur effect */
+    transition: filter 0.7s ease; /* Smooth transition for the blur effect */
+}
+
+.square:hover {
+    filter: blur(0); /* Remove the blur effect on hover */
+}
+
+.square1 {
+    top: 60px;
+    left: 400px;
+    background-color: #4c7a5b;
+    text-align: center;
+    justify-content: center;
+    font-family: "museomoderno", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1em;
+    padding-top: 120px;
+
+
+}
+
+.square2 {
+    top: 300px;
+    right: 300px;
+    background-color: #ffb3db;
+    text-align: center;
+    justify-content: center;
+    font-family: "museomoderno", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1em;
+    padding-top: 120px;
+}
+
+.square3 {
+    bottom: 80px;
+    left: 200px;
+    background-color: #70b1ff;
+    text-align: center;
+    justify-content: center;
+    font-family: "museomoderno", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1em;
+    padding-top: 120px;
+}
+
+
+#custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: fixed; 
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.square1, .square2, .square3 {
+    cursor: none;
 }
