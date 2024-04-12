@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/sky.gif);
+    background-size: cover;
+    background-position: right;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+img {
+    max-width: 90%;
+    max-height:auto;
+    padding-top: 15%;
+    padding-left: 10%;
+    animation: bounce 2.5s infinite; 
+}
+  
+  .text {
+    font-size: 18px;
+    padding-top: 5%;
+    padding-right: 10%;
+    float: left;
+    font-family: "coquette", sans-serif;
+    font-weight: 400;
+    color: #cccffa;
+ 
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-60px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-60px); }
+    /* Add a pause at the end of each cycle */
+    95% { transform: translateY(0); }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.button {
+    height: 80px;
+    width: 200px;
+    background-color: #E7E4F1;
+    color: #9093c0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "coquette", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 5px solid #9093c0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+.button:hover {
+    background-color: #f6f7d7;
+}
+.star {
+    position: absolute;
+    width: 24px; 
+	height: 24px; 
+	background: #FF5252;
+	clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+	transform: scale(5);
+}

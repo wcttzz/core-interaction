@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/title.gif);
+    background-size: cover;
+    background-position: right;
+}
+
+.title {
+    max-width: 70%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+    
+    opacity: 0; 
+  
+    animation: fadeInLeft 2s forwards, bounce 2s infinite 2s; 
+
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    padding: 100px 20px 0px 20px;
+}
+
+.button {
+    height: 80px;
+    width: 200px;
+    background-color: #E7E4F1;
+    color: #9093c0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "coquette", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 5px solid #9093c0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+
+    opacity: 0; 
+  
+    animation: fadeInLeft 2s forwards, bounce 2s infinite 2s; 
+}
+
+.button:hover {
+    background-color: #f6f7d7;
+}
+
+.star {
+    position: absolute;
+    width: 20px; /* Increase size */
+    height: 20px; /* Increase size */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    will-change: transform, opacity;
+  }
+  

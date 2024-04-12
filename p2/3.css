@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/sky.gif);
+    background-size: cover;
+    background-position: right;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.image {
+    max-width: 40%;
+    max-height:auto;
+    padding-top: 70px;
+    animation: bounce 4.5s infinite; 
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+   
+}
+
+.button {
+    height: 80px;
+    width: 200px;
+    background-color: #E7E4F1;
+    color: #9093c0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "coquette", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 5px solid #9093c0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+.button:hover {
+    background-color: #f6f7d7;
+}
+
+.collection {
+    height: 80px;
+    width: 350px;
+    background-color: #E7E4F1;
+    color: #9093c0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "coquette", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 5px solid #9093c0;
+    position: relative;
+    left: 1100px;
+    bottom: 400px;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+}
+.collection:hover {
+    background-color: #f6f7d7;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-60px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-60px); }
+    /* Add a pause at the end of each cycle */
+    95% { transform: translateY(0); }
+}
+
+#itemDisplay {
+    display: none; 
+    position: fixed; 
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 350px; 
+    height: 450px;
+    padding: 10px; 
+    border-radius: 20px;
+    border: 7px solid #9093c0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    text-align: center; 
+    z-index: 10; 
+}
+h3 {
+    font-family: "coquette", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 20px;
+    z-index: 11
+}
+p {
+    font-family: "coquette", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    z-index: 11
+}
+
+
+#itemDisplay img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+
+}
+@keyframes shake {
+    0%, 100% { transform: translateY(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+    20%, 40%, 60%, 80% { transform: translateY(10px); }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.shake {
+    animation: shake 0.85s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+}
+
+.star {
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    will-change: transform, opacity;
+  }
+  
+.dollar-bill {
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    will-change: transform, opacity; 
+}
+
+#collectionCounter {
+    font-family: "coquette", sans-serif;
+    font-size: 150px;
+    font-weight: 800;
+    color: #E7E4F1;
+    position: absolute;
+    top: 300px;
+    left: 130px;
+    
+}
+
