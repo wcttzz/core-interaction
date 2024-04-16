@@ -38,3 +38,26 @@ document.querySelector('.button').addEventListener('mouseenter', function(e) {
     }, { once: true });
   });
   
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("enterButton").addEventListener("click", function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        // Fade out content1
+        content1.style.opacity = 0;
+        content1.style.transition = "opacity 2s";
+        // After a delay, display content2
+        setTimeout(function() {
+            content1.style.display = "none";
+            document.body.style.backgroundColor = "#FFD700"; // New background color
+            content2.style.display = "block";
+            content2.style.opacity = 0;
+            setTimeout(function() {
+                content2.style.opacity = 1;
+                content2.style.transition = "opacity 2s";
+            }, 10); // Short delay before starting opacity transition
+        }, 2000); // Match this delay to your fade out transition
+    });
+});
+
+  
