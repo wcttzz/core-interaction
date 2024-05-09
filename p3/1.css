@@ -37,12 +37,12 @@ body, html {
 #overlay h1 span:nth-child(7) { color: #B6B4C2; } /* Violet */
 #overlay h1 span:nth-child(8) { color: #C9BBC8; } /* Alice Blue */
 #overlay h1 span:nth-child(9) { color: #E5C1CD; } /* Antique White */
-#overlay h1 span:nth-child(10) { color: #F3DBCF; } /* Aqua */
-#overlay h1 span:nth-child(11) { color: #EDE9E3; } /* Brown */
-#overlay h1 span:nth-child(12) { color: #E7D7C9; } /* Dark Blue */
-#overlay h1 span:nth-child(13) { color: #D4B2A7; } /* Dark Cyan */
-#overlay h1 span:nth-child(14) { color: #CDC6C3; } /* Dark Gray */
-#overlay h1 span:nth-child(15) { color: #A38F85; } /* Dark Gray */
+#overlay h1 span:nth-child(10) { color: #FFE4B3; } /* Aqua */
+#overlay h1 span:nth-child(11) { color: #EAB46C; } /* Brown */
+#overlay h1 span:nth-child(12) { color: #B74248; } /* Dark Blue */
+#overlay h1 span:nth-child(13) { color: #567B84; } /* Dark Cyan */
+#overlay h1 span:nth-child(14) { color: #681D23; } /* Dark Gray */
+#overlay h1 span:nth-child(15) { color: #776483; } /* Dark Gray */
 
 
 #overlay p {
