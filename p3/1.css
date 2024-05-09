@@ -1,0 +1,177 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; 
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.820);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease, visibility 1s ease, filter 1s ease; /* Add transition for filter */
+    filter: blur(0px); /* Initial blur state */
+}
+
+#overlay h1 {
+    font-family: "citrine-variable", sans-serif;
+    font-variation-settings: "wght" 700;
+    font-size: 6vh;
+}
+#overlay h1 span:nth-child(1) { color: #E1DAD3; } /* Red */
+#overlay h1 span:nth-child(2) { color: #E4C9B6; } /* Orange */
+#overlay h1 span:nth-child(3) { color: #D7A49A; } /* Yellow */
+#overlay h1 span:nth-child(4) { color: #AFB29F; } /* Green */
+#overlay h1 span:nth-child(5) { color: #A4B1BA; } /* Blue */
+#overlay h1 span:nth-child(6) { color: #AAC9CE; } /* Indigo */
+#overlay h1 span:nth-child(7) { color: #B6B4C2; } /* Violet */
+#overlay h1 span:nth-child(8) { color: #C9BBC8; } /* Alice Blue */
+#overlay h1 span:nth-child(9) { color: #E5C1CD; } /* Antique White */
+#overlay h1 span:nth-child(10) { color: #F3DBCF; } /* Aqua */
+#overlay h1 span:nth-child(11) { color: #EDE9E3; } /* Brown */
+#overlay h1 span:nth-child(12) { color: #E7D7C9; } /* Dark Blue */
+#overlay h1 span:nth-child(13) { color: #D4B2A7; } /* Dark Cyan */
+#overlay h1 span:nth-child(14) { color: #CDC6C3; } /* Dark Gray */
+#overlay h1 span:nth-child(15) { color: #A38F85; } /* Dark Gray */
+
+
+#overlay p {
+    font-family: "citrine-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+    font-size: 1.5 vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#overlay.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    filter: blur(60px); /* Blur effect */
+}
+
+
+#overlay .content {
+    text-align: center;
+    color: white; /* White text for readability */
+}
+
+#overlay button {
+    background: none;
+    color: white;
+    border: none;
+    padding-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+    font-family: "citrine-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+    font-size: 1.8vh;
+    
+
+}
+
+#overlay button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.2s ease-out; 
+}
+
+#overlay button:hover::after {
+    width: 100%; 
+    left: 0; 
+    right: auto;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grid-cell {
+    background-color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%; 
+    height: 100%; 
+    gap: 8px;
+    background-color: #000000; 
+}
+
+.inner-cell {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    overflow: hidden;
+    background-color: #000000; 
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1.3s;
+    background-color: #000000; 
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #000000; 
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.inner-cell.flipped .flipper {
+    transform: rotateY(180deg);
+}
+
+.inner-cell.glow {
+    animation: pulse 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+    from {
+        background-color: #000000;
+    }
+    to {
+        background-color: #ffffff;  
+        box-shadow: 0 0 10px 10px #fff; 
+    }
+}
