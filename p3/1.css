@@ -19,8 +19,8 @@ body, html {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    transition: opacity 1s ease, visibility 1s ease, filter 1s ease; /* Add transition for filter */
-    filter: blur(0px); /* Initial blur state */
+    transition: opacity 1s ease, visibility 1s ease, filter 1s ease; 
+    filter: blur(0px); 
 }
 
 #overlay h1 {
@@ -37,21 +37,21 @@ body, html {
     font-size: 1.9vh;
 }
 
-#overlay h1 span:nth-child(1) { color: #E1DAD3; } /* Red */
-#overlay h1 span:nth-child(2) { color: #E4C9B6; } /* Orange */
-#overlay h1 span:nth-child(3) { color: #D7A49A; } /* Yellow */
-#overlay h1 span:nth-child(4) { color: #AFB29F; } /* Green */
-#overlay h1 span:nth-child(5) { color: #A4B1BA; } /* Blue */
-#overlay h1 span:nth-child(6) { color: #AAC9CE; } /* Indigo */
-#overlay h1 span:nth-child(7) { color: #B6B4C2; } /* Violet */
-#overlay h1 span:nth-child(8) { color: #C9BBC8; } /* Alice Blue */
-#overlay h1 span:nth-child(9) { color: #E5C1CD; } /* Antique White */
-#overlay h1 span:nth-child(10) { color: #FFE4B3; } /* Aqua */
-#overlay h1 span:nth-child(11) { color: #EAB46C; } /* Brown */
-#overlay h1 span:nth-child(12) { color: #B74248; } /* Dark Blue */
-#overlay h1 span:nth-child(13) { color: #567B84; } /* Dark Cyan */
-#overlay h1 span:nth-child(14) { color: #681D23; } /* Dark Gray */
-#overlay h1 span:nth-child(15) { color: #776483; } /* Dark Gray */
+#overlay h1 span:nth-child(1) { color: #E1DAD3; } 
+#overlay h1 span:nth-child(2) { color: #E4C9B6; } 
+#overlay h1 span:nth-child(3) { color: #D7A49A; } 
+#overlay h1 span:nth-child(4) { color: #AFB29F; } 
+#overlay h1 span:nth-child(5) { color: #A4B1BA; } 
+#overlay h1 span:nth-child(6) { color: #AAC9CE; } 
+#overlay h1 span:nth-child(7) { color: #B6B4C2; } 
+#overlay h1 span:nth-child(8) { color: #C9BBC8; }
+#overlay h1 span:nth-child(9) { color: #E5C1CD; } 
+#overlay h1 span:nth-child(10) { color: #FFE4B3; }
+#overlay h1 span:nth-child(11) { color: #EAB46C; } 
+#overlay h1 span:nth-child(12) { color: #B74248; }
+#overlay h1 span:nth-child(13) { color: #567B84; } 
+#overlay h1 span:nth-child(14) { color: #681D23; } 
+#overlay h1 span:nth-child(15) { color: #776483; }
 
 
 #overlay p {
@@ -65,13 +65,13 @@ body, html {
 #overlay.fade-out {
     opacity: 0;
     visibility: hidden;
-    filter: blur(60px); /* Blur effect */
+    filter: blur(60px); 
 }
 
 
 #overlay .content {
     text-align: center;
-    color: white; /* White text for readability */
+    color: white; 
 }
 
 #overlay button {
