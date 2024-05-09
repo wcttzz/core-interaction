@@ -27,6 +27,8 @@ body, html {
     font-family: "citrine-variable", sans-serif;
     font-variation-settings: "wght" 700;
     font-size: 6vh;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 #overlay h1 span:nth-child(1) { color: #E1DAD3; } /* Red */
 #overlay h1 span:nth-child(2) { color: #E4C9B6; } /* Orange */
