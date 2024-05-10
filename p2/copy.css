@@ -16,7 +16,8 @@
 
 .section-left, .section-right {
     flex: 1; /* This ensures both sections take up equal space */
-    overflow-y: auto; /* Make each section independently scrollable if needed */
+    overflow-y: auto; 
+    
 }
 
 body {

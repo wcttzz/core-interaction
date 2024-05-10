@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const enterButton = document.getElementById('enterButton');
     const overlay = document.getElementById('overlay');
 
-    // Function to handle enter button click
+  
     enterButton.addEventListener('click', function() {
-        overlay.classList.add('fade-out'); // Add class to trigger CSS transitions
+        overlay.classList.add('fade-out'); 
         setTimeout(function() {
-            overlay.style.display = 'none'; // Ensures it's completely removed after transition
-        }, 600); // Match this timeout to the CSS transition duration
+            overlay.style.display = 'none'; 
+        }, 600); 
     });
 
-    const lightColors = [
+    const darkColors = [
         ['#E3DAEE', '#EBD9EC', '#EEE3DF', '#DEECEB', '#E0E6D6'],
     ['#FCD5CE', '#F8EDEB', '#F9DCC4', '#FEC89A', '#FFB5A7'],
     ['#AAC9CE', '#B6B4C2', '#C9BBCB', '#E5C1CD', '#F3DBCF'],
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ['#FFF5EE', '#E2C1BE', '#CFDBD0', '#CAC7B7', '#E6D9B7'],
     ['#EDE9E3', '#E7D7C9', '#D4B2A7', '#CDC6C3', '#DFCAC0'],
     ];
-    const darkColors = [
+    const lightColors = [
         ['#CD6932', '#44426E', '#776483', '#B19EAD', '#292643'], 
     ['#FB6D10', '#EB3E1B', '#2E2E41', '#4D3347', '#86112E'], 
     ['#632A00', '#EE932A', '#74C58D', '#549227', '#012C00'],
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
     ['#321E25', '#663845', '#884E5E', '#C06378', '#9B2A43'],
     ];
     const colorSets = [lightColors, darkColors];
-    let currentColorSetIndex = 0; // Initialize index for cycling through color sets
+    let currentColorSetIndex = 0; 
 
     function getRandomColor(colors) {
         return colors[Math.floor(Math.random() * colors.length)];
     }
 
-    // Function to initialize grid colors
+    
     function initializeGridColors() {
         const now = new Date();
         const currentHour = now.getHours();
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         currentColorSetIndex = (currentColorSetIndex + 1) % currentColors.length;
     }
 
-    // Initialize grid cells
+
     for (let i = 0; i < 12; i++) {
         const cell = document.createElement('div');
         cell.className = 'grid-cell';
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         front.style.backgroundColor = back.style.backgroundColor;
                         innerCell.classList.remove('flipped');
                     }, 600);
-                }, Math.random() * 60000); // Random flip time within the minute
+                }, Math.random() * 60000); 
             });
 
             currentColorSetIndex = (currentColorSetIndex + 1) % currentColors.length;
