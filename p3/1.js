@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 600); 
     });
 
-    const darkColors = [
+    const lightColors = [
         ['#E3DAEE', '#EBD9EC', '#EEE3DF', '#DEECEB', '#E0E6D6'],
     ['#FCD5CE', '#F8EDEB', '#F9DCC4', '#FEC89A', '#FFB5A7'],
     ['#AAC9CE', '#B6B4C2', '#C9BBCB', '#E5C1CD', '#F3DBCF'],
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ['#FFF5EE', '#E2C1BE', '#CFDBD0', '#CAC7B7', '#E6D9B7'],
     ['#EDE9E3', '#E7D7C9', '#D4B2A7', '#CDC6C3', '#DFCAC0'],
     ];
-    const lightColors = [
+    const darkColors = [
         ['#CD6932', '#44426E', '#776483', '#B19EAD', '#292643'], 
     ['#FB6D10', '#EB3E1B', '#2E2E41', '#4D3347', '#86112E'], 
     ['#632A00', '#EE932A', '#74C58D', '#549227', '#012C00'],

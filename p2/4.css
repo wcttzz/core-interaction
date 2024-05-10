@@ -15,10 +15,10 @@
 }
 
 .section-left, .section-right {
-    flex: 1; /* This ensures both sections take up equal space */
+    flex: 1; 
     overflow-y: auto; 
-    
 }
+
 
 body {
     width: 100vw;
@@ -26,8 +26,7 @@ body {
     background: url(../images/sky.gif);
     background-size: cover;
     background-position: right;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .container {
     display: flex;
